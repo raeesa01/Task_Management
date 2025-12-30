@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark px-3">
+    <span class="navbar-brand">To-Do App</span>
+    <a href="{% url 'logout' %}" class="btn btn-danger btn-sm">Logout</a>
+</nav>
+
+<div class="container mt-4">
+    <div class="row text-center mb-3">
+        <div class="col">Total: {{ total }}</div>
+        <div class="col text-success">Completed: {{ completed }}</div>
+        <div class="col text-danger">Pending: {{ pending }}</div>
+    </div>
+
+    <a href="{% url 'add_task' %}" class="btn btn-primary mb-3">+ Add Task</a>
+
+    {% for task in tasks %}
+    <div class="card mb-2 shadow-sm">
+        <div class="card-body">
+            <h5>{{ task.title }}</h5>
+            <div>{{ task.description }}</div>
+            <span class="badge bg-warning">{{ task.priority }}</span>
+
+            {% if not task.completed %}
+                <a href="{% url 'complete' task.id %}" class="btn btn-success btn-sm">Complete</a>
+            {% endif %}
+            <a href="{% url 'edit_task' task.id %}" class="btn btn-warning btn-sm">Edit</a>
+            <a href="{% url 'delete' task.id %}" class="btn btn-danger btn-sm">Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
