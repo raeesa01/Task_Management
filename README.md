@@ -1,6 +1,6 @@
 📝 Task Management Application (Django)
 
-A simple and efficient Task Management Web Application built using Django that allows users to create, update, view, and delete tasks. This project demonstrates core Django concepts such as models, views, templates, forms, and CRUD operations.
+                A simple and efficient Task Management Web Application built using Django that allows users to create, update, view, and delete tasks. This project demonstrates core Django concepts such as                       models, views, templates, forms, and CRUD operations.
 
 🚀 Features
     ➕ Add new tasks
@@ -12,15 +12,15 @@ A simple and efficient Task Management Web Application built using Django that a
 
 🛠️ Tech Stack
 
-Backend: Python, Django
-
-Frontend: HTML, CSS (Django Templates)
-
-Database: SQLite (default Django DB)
-
-Version Control: Git & GitHub
-
-⚙️ Installation & Setup
+        Backend: Python, Django
+        
+        Frontend: HTML, CSS (Django Templates)
+        
+        Database: SQLite (default Django DB)
+        
+        Version Control: Git & GitHub
+        
+        ⚙️ Installation & Setup
 
 Follow these steps to run the project locally:
 
@@ -56,10 +56,10 @@ http://127.0.0.1:8000/
 
 
 🎯 Future Enhancements
-  🔐 User Authentication (Login/Signup)
-  📅 Due dates & priority levels
-  🔍 Search and filter tasks
-  🌐 Deployment on cloud (Heroku / PythonAnywhere)
+      🔐 User Authentication (Login/Signup)
+      📅 Due dates & priority levels
+      🔍 Search and filter tasks
+      🌐 Deployment on cloud (Heroku / PythonAnywhere)
 
 👩‍💻 Author
 Ravisha
